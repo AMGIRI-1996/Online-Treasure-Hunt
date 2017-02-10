@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="wrap_content" android:layout_width="match_parent">
+    <item android:id="@+id/scoreboard"
+
+        android:title="Scoreboard" />
+
+
+    <item android:id="@+id/aboutus"
+
+        android:title="About Us"
+        />
+    <item android:id="@+id/contactus"
+
+        android:title="Contact Us" />
+</menu>

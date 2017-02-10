@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:title="passwordMatch"
+        android:key="passwordMatch"
+        android:defaultValue="false">
+
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:title="end"
+        android:key="end"
+        android:defaultValue="false">
+
+    </CheckBoxPreference>
+    <Preference
+        android:key="question"
+        android:title="question"
+        android:defaultValue="0">
+
+    </Preference>
+    <Preference
+        android:key="team"
+        android:title="team"
+        android:defaultValue="unknown">
+
+    </Preference>
+    <Preference
+        android:key="enterTeam"
+        android:title="enterTeam"
+        android:defaultValue="">
+
+    </Preference>
+    <Preference
+        android:key="time"
+        android:title="time"
+        android:defaultValue="unknown">
+
+    </Preference>
+    <Preference
+        android:key="score"
+        android:title="score"
+        android:defaultValue="0">
+
+    </Preference>
+    <Preference
+        android:key="status"
+        android:title="status"
+        android:defaultValue="false">
+    </Preference>
+    <Preference
+        android:key="scoreboard"
+        android:title="scoreboard"
+        android:defaultValue="Empty">
+
+    </Preference>
+    <Preference
+        android:key="answers"
+        android:title="answers"
+        android:defaultValue="Empty">
+    </Preference>
+</PreferenceScreen>

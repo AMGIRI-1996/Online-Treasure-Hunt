@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back2"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:weightSum="100"
+        android:maxLines = "100"
+        android:scrollbars = "vertical"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="score"
+            android:id="@+id/score"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:text="question"
+            android:id="@+id/question"
+            android:layout_gravity="right"
+            android:layout_weight="9.14" />
+
+        <TextView
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:text="team"
+            android:id="@+id/team" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:gravity="center"
+            android:id="@+id/clue"
+            android:text="Treasure Hunt will start soon...."
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:layout_weight="9.14"
+            >
+
+    </TextView>
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:gravity="center"
+            android:id="@+id/image"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:layout_weight="9.14"
+            android:visibility="gone"
+            />
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/music"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:layout_weight="9.14"
+            android:visibility="gone"
+            android:text="Play Music"
+            android:onClick="playMusic"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan QRCode"
+            android:id="@+id/QRCode"
+            android:layout_gravity="right" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer"
+            android:textColorHint="#fff"
+            android:id="@+id/answer"
+            android:textColor="#fff"
+            android:layout_weight="30"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ansBtn"
+            android:text="Submit"
+            />
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

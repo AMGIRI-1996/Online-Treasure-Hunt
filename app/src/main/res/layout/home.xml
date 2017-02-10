@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back2"
+    >
+
+    <EditText
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:password="true"
+        android:id="@+id/pass"
+        android:layout_marginTop="205dp"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/passBtn"
+        android:layout_marginTop="50dp"
+
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/team"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="79dp"
+        android:hint="Team Name"
+        />
+</RelativeLayout>

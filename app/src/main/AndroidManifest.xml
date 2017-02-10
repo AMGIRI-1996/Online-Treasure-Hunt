@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anurag.onlinetreasurehunt"
+    android:installLocation="auto" >
+
+
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+    <meta-data
+        android:name="com.google.android.gms.vision.DEPENDENCIES"
+        android:value="barcode" />
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme">
+       <!-- android:theme="@style/Theme.AppCompat.Light"-->
+
+
+
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <intent-filter>
+                <action android:name="android.intent.action.Home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Clues"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <intent-filter>
+                <action android:name="android.intent.action.Clues" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TakePhoto"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.TakePhoto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InitializeScanner"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.InitializeScanner" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".QRMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.samples.vision.barcodereader.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.samples.vision.barcodereader.CONTACTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.samples.vision.barcodereader.ABOUTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Check"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Check" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".End"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.End" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Scoreboard"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Scoreboard" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Answers"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Answers" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Finish"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Finish" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".BarcodeCaptureActivity"
+            android:label="Read Barcode"/>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>
